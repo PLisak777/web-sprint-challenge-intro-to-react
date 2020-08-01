@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Character from './Character';
 import styled from 'styled-components';
 
-export default function CharCard() {
+export default function CharCard(props) {
 // const [charData, setCharData] = props;
 
 const CardHead = styled.div`
@@ -14,6 +14,6 @@ flex: 1;
 `
 
     return (
-    <CardHead>Name: </CardHead>
+    <CardHead>Name: {props.name} </CardHead>
     )
 };
