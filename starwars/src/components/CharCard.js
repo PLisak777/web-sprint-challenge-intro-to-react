@@ -40,10 +40,9 @@ const CardContent = styled.div`
 
     return (
         <Card>
-            <CardHead>Designation: {props.name} </CardHead>
+            <CardHead>Designation: {props.name}</CardHead>
             <CardImg><img className='card-img' src={props.image} alt='' /></CardImg>
             <CardContent>
-                {/* <p>Species: {props.species}</p> */}
                 <p>Location: {props.location.name}</p>
                 <p>Status: {props.status}</p>
             </CardContent>
